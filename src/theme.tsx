@@ -10,11 +10,11 @@ const theme = createTheme({
       main: "#ff3b30",
     },
     success: {
-      main: "green",
+      main: "#357a38",
       light: "#4caf50",
     },
     text: {
-      primary: "black",
+      primary: "#000000",
     },
   },
 });

@@ -21,6 +21,7 @@ const StyledTypo = styled(Typography)(({ theme }) => ({
   fontWeight: 700,
   lineHeight: "25px",
   letterSpacing: "0.05em",
+  cursor: "pointer",
 }));
 const Center = () => {
   return (

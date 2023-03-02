@@ -27,9 +27,9 @@ const Slider: React.FC = () => {
   return (
     <div>
       <img
-        //    src={myImage}
+        src={myImage}
 
-        {...imageProps}
+        // {...imageProps}
       />
     </div>
   );

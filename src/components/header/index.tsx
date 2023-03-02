@@ -20,13 +20,13 @@ const StyledBox = styled(Box)(({ theme }) => ({
 }));
 const Index = () => {
   return (
-    <Container maxWidth="lg">
+    // <Container maxWidth="lg">
       <StyledBox>
         <Logo />
         <Center />
         <Icons />
       </StyledBox>
-    </Container>
+    // </Container>
   );
 };
 

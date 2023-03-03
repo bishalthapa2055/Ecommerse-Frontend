@@ -1,10 +1,11 @@
-import { Box, styled } from "@mui/material";
+import { Box, Container, styled } from "@mui/material";
 import React from "react";
 import Slider from "./slider";
 
 const StyledBox = styled(Box)({
   position: "absolute",
-  width: "1366px",
+  // width: "1366px",
+  width: "100%",
   height: "648px",
   left: "1px",
   top: "94px",
@@ -13,9 +14,11 @@ const StyledBox = styled(Box)({
 
 const Index = () => {
   return (
+    // <Container fixed>
     <StyledBox>
       <Slider />
     </StyledBox>
+    // </Container>
   );
 };
 

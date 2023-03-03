@@ -7,10 +7,8 @@ import { theme } from "./theme";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <Container maxWidth="lg" sx={{ border: "1px solid black" }}>
-      <ThemeProvider theme={theme}>
-        <App />
-      </ThemeProvider>
-    </Container>
+    <ThemeProvider theme={theme}>
+      <App />
+    </ThemeProvider>
   </React.StrictMode>
 );

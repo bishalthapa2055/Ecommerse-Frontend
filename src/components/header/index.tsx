@@ -7,7 +7,7 @@ import Icons from "./icons";
 const StyledBox = styled(Box)(({ theme }) => ({
   display: "flex",
   justifyContent: "space-between",
-  // border: "1px solid red",
+  border: "1px solid red",
   height: "88px",
   position: "relative",
   left: "0%",
@@ -20,7 +20,7 @@ const StyledBox = styled(Box)(({ theme }) => ({
 }));
 const Index = () => {
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="lg" sx={{ backgroundColor: "5px solid red" }}>
       <StyledBox>
         <Logo />
         <Center />

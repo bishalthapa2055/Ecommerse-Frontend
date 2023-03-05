@@ -10,7 +10,6 @@ const StyledBox = styled(Box)({
   bottom: "81.89%",
   backgroundColor: "white",
   border: "1px solid white",
-  // alignItems: "center",
 });
 const Collection = () => {
   return (
@@ -42,13 +41,10 @@ const Collection = () => {
         <Box
           sx={{
             position: "absoulte",
-            width: "371.5px",
+            width: "359px",
             height: "48px",
             left: "586px",
             top: "174px",
-            // border: "2px solid white",
-            // backgroundColor: "whitesmoke",
-            alignItems: "center",
           }}
         >
           <Typography
@@ -56,7 +52,7 @@ const Collection = () => {
               fontFamily: "Lato",
               fontStyle: "normal",
               fontWeight: 400,
-              fontSize: "20px",
+              fontSize: "20 px",
               lineHeight: "48px",
               textAlign: "center",
             }}

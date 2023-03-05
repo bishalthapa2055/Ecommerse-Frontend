@@ -1,5 +1,6 @@
 import { Box, Container, styled } from "@mui/material";
 import React from "react";
+import Cards from "./cards";
 import Collection from "./collection";
 
 const StyledBox = styled(Box)({
@@ -14,9 +15,12 @@ const StyledBox = styled(Box)({
 const Index = () => {
   return (
     <>
+      {/* <Container maxWidth="lg"> */}
+      {/* </Container> */}
       <StyledBox>
-        <Container maxWidth="lg">
+        <Container maxWidth="lg" sx={{backgroundColor :"1px solid red"}}>
           <Collection />
+          <Cards />
         </Container>
       </StyledBox>
     </>

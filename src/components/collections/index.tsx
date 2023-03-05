@@ -1,24 +1,25 @@
 import { Box, Container, styled } from "@mui/material";
 import React from "react";
-import Slider from "./slider";
+import Collection from "./collection";
 
 const StyledBox = styled(Box)({
+  border: "2px solid green",
+  backgroundColor: "yellow",
   position: "absolute",
-  // width: "1366px",
   width: "100%",
-  height: "648px",
-  left: "1px",
-  top: "94px",
-  border: "1px solid red",
+  height: "1226px",
+  left: "0px",
+  top: "700px",
 });
-
 const Index = () => {
   return (
-    <Container>
+    <>
       <StyledBox>
-        <Slider />
+        <Container maxWidth="lg">
+          <Collection />
+        </Container>
       </StyledBox>
-    </Container>
+    </>
   );
 };
 

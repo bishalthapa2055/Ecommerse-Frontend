@@ -1,4 +1,5 @@
-import Container from "@mui/material/Container";
+import { Container } from "@mui/material";
+import Collection from "./components/collections";
 import Header from "./components/header";
 
 import Slider from "./components/slider/";
@@ -7,6 +8,7 @@ function App() {
     <>
       <Header />
       <Slider />
+      <Collection />
     </>
   );
 }

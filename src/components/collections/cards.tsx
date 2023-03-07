@@ -112,7 +112,7 @@ const Cards = () => {
           <CardMedia
             component="img"
             height="140"
-            image={image1}
+            image={image2}
             alt="green iguana"
             sx={{
               position: "absolute",
@@ -141,7 +141,7 @@ const Cards = () => {
           <CardMedia
             component="img"
             height="140"
-            image={image1}
+            image={image3}
             alt="green iguana"
             sx={{
               position: "absolute",
@@ -170,7 +170,7 @@ const Cards = () => {
           <CardMedia
             component="img"
             height="140"
-            image={image1}
+            image={image4}
             alt="green iguana"
             sx={{
               position: "absolute",
@@ -199,7 +199,7 @@ const Cards = () => {
           <CardMedia
             component="img"
             height="140"
-            image={image1}
+            image={image5}
             alt="green iguana"
             sx={{
               position: "absolute",
@@ -229,7 +229,7 @@ const Cards = () => {
           <CardMedia
             component="img"
             height="140"
-            image={image1}
+            image={image6}
             alt="green iguana"
             sx={{
               position: "absolute",
@@ -259,7 +259,7 @@ const Cards = () => {
           <CardMedia
             component="img"
             height="140"
-            image={image1}
+            image={image7}
             alt="green iguana"
             sx={{
               position: "absolute",
@@ -289,7 +289,7 @@ const Cards = () => {
           <CardMedia
             component="img"
             height="140"
-            image={image1}
+            image={image8}
             alt="green iguana"
             sx={{
               position: "absolute",

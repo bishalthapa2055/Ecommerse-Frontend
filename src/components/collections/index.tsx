@@ -4,8 +4,8 @@ import Cards from "./cards";
 import Collection from "./collection";
 
 const StyledBox = styled(Box)({
-  border: "2px solid green",
-  backgroundColor: "yellow",
+  // border: "2px solid green",
+  // backgroundColor: "yellow",
   position: "absolute",
   width: "100%",
   height: "1226px",
@@ -18,7 +18,10 @@ const Index = () => {
       {/* <Container maxWidth="lg"> */}
       {/* </Container> */}
       <StyledBox>
-        <Container maxWidth="lg" sx={{backgroundColor :"1px solid red"}}>
+        <Container
+          maxWidth="lg"
+          // sx={{backgroundColor :"1px solid red"}}
+        >
           <Collection />
           <Cards />
         </Container>

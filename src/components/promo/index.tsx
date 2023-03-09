@@ -17,7 +17,7 @@ const Index = () => {
       <StyledBox>
         <Box
           sx={{
-            // position: "absoulte",
+            // position: "absolute",
             width: "715px",
             height: "429px",
             top: "2124px",
@@ -27,19 +27,21 @@ const Index = () => {
         >
           <Box
             sx={{
-              //   position: "absolute",
+              // position: "absolute",
               width: "368px",
               height: "38px",
-              left: "237px",
+              left: "500px",
               top: "2243px",
+              backgroundColor: "white",
+              border: "1px solid black",
             }}
           >
-            Peace Of Mind
+            Peace of ming
           </Box>
         </Box>
         <Box
           sx={{
-            position: "absoulte",
+            position: "static",
             width: "505px",
             height: "429px",
             left: "798px",
@@ -47,7 +49,19 @@ const Index = () => {
             backgroundColor: "grey",
           }}
         >
-          Buy 2 get 1 free
+          <Box
+            sx={{
+              position: "static",
+              width: "368px",
+              height: "38px",
+              left: "856px",
+              top: "2243px",
+              border: "1px solid yellow",
+              alignItems: "center",
+            }}
+          >
+            Buy 2 get 1 free
+          </Box>
         </Box>
       </StyledBox>
     </Container>

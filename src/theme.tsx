@@ -18,7 +18,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: ["Lato", "-apple-system", "Roboto", "Arial"].join(","),
+    fontFamily: ["Lato", "-apple-system", "Roboto", "Arimo", "Arial"].join(","),
     subtitle1: {
       fontSize: 12,
     },

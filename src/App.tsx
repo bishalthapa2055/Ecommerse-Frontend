@@ -4,6 +4,7 @@ import Header from "./components/header";
 import Services from "./components/services";
 import Slider from "./components/slider/";
 import Promo from "./components/promo";
+import BestSelling from "./components/best-selling";
 function App() {
   return (
     <>
@@ -12,6 +13,7 @@ function App() {
       <Collection />
       {/* <Services /> */}
       <Promo />
+      <BestSelling />
     </>
   );
 }

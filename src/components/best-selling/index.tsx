@@ -16,8 +16,8 @@ const Index = () => {
   return (
     <>
       <StyledBox>
-        <Header />
         <Container maxWidth="lg">
+          <Header />
           <Cards />
         </Container>
       </StyledBox>

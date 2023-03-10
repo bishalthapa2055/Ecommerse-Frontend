@@ -19,8 +19,13 @@ const Item = styled(Paper)(({ theme }) => ({
   textAlign: "center",
   //   color: theme.palette.text.secondary,
 }));
+interface ProductProps {
+  name: string;
+  price: number;
+  image: string;
+}
 
-const CardIndividuals = (data: any) => {
+const CardIndividuals = (props: ProductProps) => {
   return (
     <>
       <Card
@@ -31,14 +36,15 @@ const CardIndividuals = (data: any) => {
           height: " 432px",
           // left: "63px",
           top: "260px",
-          backgroundColor: "whitesmoke",
+          barder: "1px solid red",
+          // backgroundColor: "green",
           //   border: "none",
         }}
       >
         <CardMedia
           component="img"
           height="140"
-          image={data.image}
+          image={props.image}
           alt="hs1"
           sx={{
             position: "absolute",
@@ -51,12 +57,10 @@ const CardIndividuals = (data: any) => {
         <CardContent
           sx={{
             position: "absolute",
-            width: "109px",
+            width: "200px",
             height: "26px",
-            left: "90px",
+            left: "60px",
             top: "340px",
-            // border: "2px solid red",
-            backgroundColor: "none",
           }}
         >
           <Typography
@@ -69,7 +73,7 @@ const CardIndividuals = (data: any) => {
               textAlign: "center",
             }}
           >
-            {data.name}
+            {props.name}
           </Typography>
         </CardContent>
         <CardContent
@@ -90,7 +94,7 @@ const CardIndividuals = (data: any) => {
               lineHeight: "19px",
             }}
           >
-            {data.price}
+            {props.price}
           </Typography>
         </CardContent>
       </Card>

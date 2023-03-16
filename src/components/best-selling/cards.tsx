@@ -10,14 +10,15 @@ import {
   Stack,
   Container,
 } from "@mui/material";
+import Button from "@mui/material/Button";
 import image1 from "../../assets/hs1.png";
 import image2 from "../../assets/hs2.png";
 import image3 from "../../assets/hs3.png";
 import image4 from "../../assets/hs4.png";
-import CardIndividuals from "./cardIndividuals";
+// import CardIndividuals from "./cardIndividuals";
 // import theme from "../../theme";
 
-const Item = styled(Paper)(({ theme }) => ({
+const Item = styled(Box)(({ theme }) => ({
   // backgroundColor: "red",
   // ...theme.typography.body2,
   //   padding: theme.spacing(5),
@@ -26,28 +27,6 @@ const Item = styled(Paper)(({ theme }) => ({
   //   color: theme.palette.text.secondary,
 }));
 
-// const objects = [
-//   {
-//     name: "Gray Polo Shirt",
-//     image: image1,
-//     price: "$49.00",
-//   },
-//   {
-//     name: "Red Shirt",
-//     image: image2,
-//     price: "$69.00",
-//   },
-//   {
-//     name: "Polo White Shirt",
-//     image: image3,
-//     price: "$29.00",
-//   },
-//   {
-//     name: "Pink Cashy Shirt",
-//     image: image4,
-//     price: "$39.00",
-//   },
-// ];
 const Cards = () => {
   // console.log(objects);
   return (
@@ -348,6 +327,18 @@ const Cards = () => {
           </Card>
         </Item>
       </Stack>
+      <Button
+        variant="contained"
+        sx={{
+          position: "absolute",
+          width: "161px",
+          height: "58px",
+          left: "604px",
+          top: "752px",
+        }}
+      >
+        SHOP NOW
+      </Button>
     </>
   );
 };

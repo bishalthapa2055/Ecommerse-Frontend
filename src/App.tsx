@@ -5,6 +5,7 @@ import Services from "./components/services";
 import Slider from "./components/slider/";
 import Promo from "./components/promo";
 import BestSelling from "./components/best-selling";
+import Footer from "./components/footer";
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
       {/* <Services /> */}
       <Promo />
       <BestSelling />
+      <Footer />
     </>
   );
 }

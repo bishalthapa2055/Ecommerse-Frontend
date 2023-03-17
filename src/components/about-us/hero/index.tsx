@@ -19,7 +19,7 @@ const StyledBox1 = styled(Box)({
   height: "348px",
   left: "0px",
   top: "85px",
-  backgroundColor: "yellow",
+  //   backgroundColor: "yellow",
 });
 const StyledTypo = styled(Typography)({
   fontFamily: "Lato",

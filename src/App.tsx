@@ -6,16 +6,20 @@ import Slider from "./components/slider/";
 import Promo from "./components/promo";
 import BestSelling from "./components/best-selling";
 import Footer from "./components/footer";
+import AboutUs from "../src/components/about-us";
 function App() {
   return (
     <>
-      <Header />
-      <Slider />
-      <Collection />
-      {/* <Services /> */}
-      <Promo />
-      <BestSelling />
-      <Footer />
+      {/* //for home */}
+      {/* <Header /> */}
+      {/* <Slider /> */}
+      {/* <Collection /> */}
+      {/* <Services />  */}
+      {/* <Promo /> */}
+      {/* <BestSelling /> */}
+      {/* <Footer /> / */}
+      {/* for abour us section */}
+      <AboutUs />
     </>
   );
 }

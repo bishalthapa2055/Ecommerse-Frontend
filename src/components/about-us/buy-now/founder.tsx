@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, styled, Typography } from "@mui/material";
+import IndCard from "./indCard";
 const StyledBox = styled(Box)({
   position: "absolute",
   width: "1200px",
@@ -10,6 +11,29 @@ const StyledBox = styled(Box)({
   border: "1px solid red",
   backgroundColor: "#FBFBFB",
 });
+import f1 from "../../../assets/aboutus/f1.png";
+import f2 from "../../../assets/aboutus/f2.png";
+import f3 from "../../../assets/aboutus/f3.png";
+import f4 from "../../../assets/aboutus/f4.png";
+
+const objects = [
+  {
+    img: f1,
+    name: "HM Jawad",
+  },
+  {
+    img: f2,
+    name: "Furqan Abid",
+  },
+  {
+    img: f3,
+    name: "Abdullah Ah",
+  },
+  {
+    img: f4,
+    name: "Akbar Kureshi",
+  },
+];
 const Founder = () => {
   return (
     <>
@@ -48,6 +72,7 @@ const Founder = () => {
             </Typography>
           </Box>
         </Box>
+        <IndCard array={objects} />
       </StyledBox>
     </>
   );

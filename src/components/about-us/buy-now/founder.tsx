@@ -8,7 +8,7 @@ const StyledBox = styled(Box)({
   height: "744px",
   // left: 0px
   top: "600px",
-  border: "1px solid red",
+  //   border: "1px solid red",
   backgroundColor: "#FBFBFB",
 });
 import f1 from "../../../assets/aboutus/f1.png";
@@ -44,8 +44,8 @@ const Founder = () => {
             width: "1200px",
             height: "527px",
             top: "107px",
-            border: "1px solid red",
-            backgroundColor: "green",
+            // border: "1px solid red",
+            // backgroundColor: "green",
           }}
         >
           <Box

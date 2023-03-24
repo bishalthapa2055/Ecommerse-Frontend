@@ -10,6 +10,8 @@ import React from "react";
 import image1 from "../../../assets/aboutus/by1.png";
 import image2 from "../../../assets/aboutus/by2.png";
 import Founder from "./founder";
+import TestiContents from "./testi-contents";
+import TestimonialsHeader from "./testimonials-header";
 
 const StyledContainer = styled(Box)({
   position: "absolute",
@@ -18,8 +20,8 @@ const StyledContainer = styled(Box)({
   height: "1476px",
   // left: "63px",
   top: "522px",
-  border: "1 px solid red",
-  backgroundColor: "yellow",
+  // border: "1 px solid red",
+  // backgroundColor: "yellow",
 });
 
 const StyledTypo = styled(Typography)({
@@ -87,6 +89,8 @@ const Index = () => {
             </Stack>
           </Box>
           <Founder />
+          <TestimonialsHeader />
+          <TestiContents />
         </Container>
       </StyledContainer>
     </>

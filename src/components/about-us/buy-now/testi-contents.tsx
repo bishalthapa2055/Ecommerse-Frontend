@@ -1,30 +1,42 @@
-import { Box, Stack } from "@mui/material";
-import React from "react";
+import { Box, Stack, styled } from "@mui/material";
+import Avatar from "@mui/material/Avatar";
+import t1 from "../../../assets/aboutus/t1.png";
 
-// osition: absolute;
-// width: 1366px;
-// height: 456px;
-// left: 0px;
-// top: 1998px;
+const MainBox = styled(Box)({
+  position: "absolute",
+  width: "1200px",
+  height: "456px",
+  //   left: "223px",
+  top: "1350px",
+  backgroundColor: "red",
+});
 const TestiContents = () => {
   return (
     <>
-      <Stack direction="column">
+      <MainBox>
         <Box
           sx={{
-            border: "2px solid red",
-            backgroundColor: "yellow",
-            width: "300px",
-            height: "200px",
             position: "relative",
-            top: "2000px",
+            width: "921px",
+            height: "216px",
+            left: "193px",
+            top: "130px",
+            backgroundColor: "yellow",
           }}
         >
-          hello there
+          <Avatar
+            alt="avatar"
+            src={t1}
+            sx={{
+              position: "relative",
+              width: "210px",
+              height: "210px",
+              //   left: "223px",
+              //   top: "2128px",
+            }}
+          />
         </Box>
-        <Box>hello there</Box>
-        <Box>hello there</Box>
-      </Stack>
+      </MainBox>
     </>
   );
 };

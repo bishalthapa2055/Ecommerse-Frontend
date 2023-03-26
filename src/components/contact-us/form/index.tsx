@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Box, styled, Typography } from "@mui/material";
+import Form from "./form";
 
 const StyledBox = styled(Box)({
   border: "1px solid red",
@@ -47,7 +48,8 @@ const InfoBox2 = styled(Box)({
   height: "114px",
   left: "953px",
   top: "737px",
-  backgroundColor: "green",
+  marginTop: "48px",
+  //   backgroundColor: "green",
 });
 const Typo = styled(Typography)({
   fontFamily: "Arimo",
@@ -58,11 +60,6 @@ const Typo = styled(Typography)({
   color: "#1D1D1D",
 });
 const ContentTypo = styled(Typography)({
-  position: "relative",
-  width: "300px",
-  height: "65px",
-  //   left: "953px",
-  top: "30px",
   fontFamily: "Lato",
   fontStyle: "normal",
   fontWeight: 400,
@@ -100,7 +97,7 @@ const Index = () => {
             width: "350px",
             height: "269px",
             left: "880px",
-            border: "1px solid red",
+            // border: "1px solid red",
             top: "494px",
           }}
         >
@@ -116,13 +113,50 @@ const Index = () => {
             >
               <Typo>Visit Us</Typo>
             </Typography>
-            <ContentTypo>UET Lahore, Punjab, Pakistan</ContentTypo>
-            <ContentTypo>Phone: +923039898987</ContentTypo>
+            <ContentTypo
+              sx={{
+                position: "relative",
+                width: "300px",
+                height: "65px",
+                //   left: "953px",
+                top: "30px",
+              }}
+            >
+              UET Lahore, Punjab, Pakistan
+            </ContentTypo>
+            <ContentTypo
+              sx={{
+                position: "relative",
+                width: "300px",
+                height: "65px",
+                //   left: "953px",
+                top: "-15px",
+              }}
+            >
+              Phone: +923039898987
+            </ContentTypo>
           </InfoBox>
           <InfoBox2>
             <Typo>Get In Touch</Typo>
+            <ContentTypo
+              sx={{
+                position: "relative",
+                top: "15px",
+              }}
+            >
+              You can get in touch with us on this provided email.
+            </ContentTypo>
+            <ContentTypo
+              sx={{
+                position: "relative",
+                top: "20px",
+              }}
+            >
+              Email: hmjawad087@gmail.com{" "}
+            </ContentTypo>
           </InfoBox2>
         </Box>
+        <Form />
       </Container>
     </>
   );

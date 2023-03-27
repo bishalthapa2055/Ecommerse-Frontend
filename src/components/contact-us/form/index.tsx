@@ -3,7 +3,7 @@ import { Container, Box, styled, Typography } from "@mui/material";
 import Form from "./form";
 
 const StyledBox = styled(Box)({
-  border: "1px solid red",
+  // border: "1px solid red",
   position: "absolute",
   width: "1240px",
   height: "563px",

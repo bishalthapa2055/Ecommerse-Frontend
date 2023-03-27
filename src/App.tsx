@@ -21,6 +21,7 @@ function App() {
       {/* <Footer /> / */}
       {/* for abour us section */}
       {/* <AboutUs /> */}
+      {/* for contact use section */}
       <ContactUs />
     </>
   );

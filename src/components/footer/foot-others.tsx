@@ -9,12 +9,12 @@ const StyledBox = styled(Box)({
   // width: "1366px",
   height: "477px",
   left: "0px",
-  top: "3393px",
+  top: "1255px",
   bottom: 0,
   // border: "1px solid red",
   // backgroundColor: "grey",
 });
-const Index = () => {
+const FooterOthers = () => {
   return (
     <>
       <StyledBox>
@@ -27,4 +27,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default FooterOthers;

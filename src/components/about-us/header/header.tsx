@@ -77,10 +77,12 @@ const Headers = () => {
           </Box>
         </Box>
         <Box
-          //   flex={0}
+          // flex={0}
           sx={{
-            //   border: "1px solid green",
-            //   backgroundColor: "red",
+            position: "relative",
+            // border: "1px solid green",
+            left: "50px",
+            // backgroundColor: "red",
             height: "80px",
           }}
         >
@@ -92,7 +94,7 @@ const Headers = () => {
               left: "1177px",
               top: "20px",
               //   border: "1px solid green",
-              //   backgroundColor: "grey",
+              // backgroundColor: "grey",
               //   right: "0px",
             }}
           ></Box>

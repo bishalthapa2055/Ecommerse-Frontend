@@ -7,6 +7,7 @@ import Promo from "./components/promo";
 import BestSelling from "./components/best-selling";
 import Footer from "./components/footer";
 import AboutUs from "../src/components/about-us";
+import ContactUs from "./components/contact-us";
 function App() {
   return (
     <>
@@ -19,7 +20,9 @@ function App() {
       {/* <BestSelling /> */}
       {/* <Footer /> / */}
       {/* for abour us section */}
-      <AboutUs />
+      {/* <AboutUs /> */}
+      {/* for contact use section */}
+      <ContactUs />
     </>
   );
 }

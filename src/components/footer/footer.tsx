@@ -6,11 +6,12 @@ import Column3 from "./column3";
 import Column4 from "./column4";
 const StyledBox = styled(Box)({
   //   top: "",
-  position: "absolute",
+  // position: "absolute",
   //   display: "flex",
   // left: 4.61%;
   // right: 87.7%;
-  top: "14.68%",
+  // top: "1200px",
+  // top: "14.68%",
   //   bottom: "41.3%",
 });
 

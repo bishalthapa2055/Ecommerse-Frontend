@@ -48,24 +48,6 @@ const Index = () => {
           </StyledBox>
         </Container>
       </StyledBox1>
-      {/* <Box
-        sx={{
-          position: "absolute",
-
-          // width: "1366px",
-          width: "100%",
-          height: "348px",
-          left: "0px",
-          top: "85px",
-          // border: "1px solid red",
-          // backgroundColor: "yellow",
-        }}
-      >
-        <img src={Hero} alt="hero" />
-      </Box>
-      <Container maxWidth="lg">
-        <StyledBox>Hello There</StyledBox>
-      </Container> */}
     </>
   );
 };

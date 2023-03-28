@@ -8,6 +8,7 @@ import BestSelling from "./components/best-selling";
 import Footer from "./components/footer";
 import AboutUs from "../src/components/about-us";
 import ContactUs from "./components/contact-us";
+import ContactSucess from "./components/contact-sucess";
 function App() {
   return (
     <>
@@ -23,6 +24,8 @@ function App() {
       {/* <AboutUs /> */}
       {/* for contact use section */}
       <ContactUs />
+      {/* for contact sucessfull  */}
+      {/* <ContactSucess /> */}
     </>
   );
 }

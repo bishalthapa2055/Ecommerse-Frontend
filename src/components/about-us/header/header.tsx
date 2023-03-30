@@ -113,7 +113,6 @@ const Headers = () => {
               <StyledBadge>
                 <PersonOutlineOutlinedIcon />
               </StyledBadge>
-
               <StyledBadge badgeContent={10} color="primary">
                 <ShoppingBagOutlinedIcon />
               </StyledBadge>

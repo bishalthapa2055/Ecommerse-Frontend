@@ -8,6 +8,8 @@ import BestSelling from "./components/best-selling";
 import Footer from "./components/footer";
 import AboutUs from "../src/components/about-us";
 import ContactUs from "./components/contact-us";
+import SinglePageView from "./components/single-product-view";
+import ContactSucess from "./components/contact-sucess";
 function App() {
   return (
     <>
@@ -22,7 +24,12 @@ function App() {
       {/* for abour us section */}
       {/* <AboutUs /> */}
       {/* for contact use section */}
-      <ContactUs />
+      {/* <ContactUs /> */}
+      {/* for contact sucessfull  */}
+      {/* <ContactSucess /> */}
+      {/* fot single page view */}
+
+      <SinglePageView />
     </>
   );
 }

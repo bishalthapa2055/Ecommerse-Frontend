@@ -72,6 +72,7 @@ const Index = () => {
   return (
     <>
       <Container maxWidth="lg">
+        {/* <Box> */}
         <StyledBox>
           <TypoBox>
             <StyledTypo>We would love to hear from you.</StyledTypo>
@@ -91,6 +92,7 @@ const Index = () => {
             </StyledTypo2>
           </Box>
         </StyledBox>
+        {/* </Box> */}
         <Box
           sx={{
             position: "relative",
@@ -152,7 +154,7 @@ const Index = () => {
                 top: "20px",
               }}
             >
-              Email: hmjawad087@gmail.com{" "}
+              Email: hmjawad087@gmail.com
             </ContentTypo>
           </InfoBox2>
         </Box>

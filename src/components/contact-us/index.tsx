@@ -10,8 +10,8 @@ const Index = () => {
       <Container maxWidth="lg">
         <Headers />
       </Container>
-      <Form />
       <Hero />
+      <Form />
       {/* <Container maxWidth="lg"> */}
       <Footer />
       {/* </Container> */}

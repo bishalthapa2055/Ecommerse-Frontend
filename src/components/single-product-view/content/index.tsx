@@ -1,6 +1,18 @@
 import React from "react";
-import { Box, styled, Typography, Rating } from "@mui/material";
+import {
+  Box,
+  styled,
+  Typography,
+  Rating,
+  TextField,
+  Autocomplete,
+  Stack,
+  Button,
+} from "@mui/material";
 import image from "../../../assets/singlepage/sp1.png";
+import CircleOutlinedIcon from "@mui/icons-material/CircleOutlined";
+import MailIcon from "@mui/icons-material/Mail";
+import CircleIcon from "@mui/icons-material/Circle";
 import { theme } from "../../../theme";
 const StyledBox = styled(Box)(({ theme }) => ({
   position: "absolute",
@@ -78,6 +90,103 @@ const Price = styled(Typography)({
   alignItems: "center",
   textAlign: "center",
 });
+const Description = styled(Typography)({
+  position: "absolute",
+  width: "550px",
+  height: "72px",
+  left: "49.5%",
+  top: "18%",
+
+  fontFamily: "Lato",
+  fontStyle: "normal",
+  fontWeight: 400,
+  fontSize: "16px",
+  lineHeight: "19px",
+
+  color: "#555555",
+});
+const SizeTypo = styled(Typography)({
+  fontFamily: "Lato",
+  fontStyle: "normal",
+  fontWeight: 400,
+  fontSize: "16px",
+  lineHeight: "19px",
+
+  color: "#1D1D1D",
+});
+const StyledButton = styled(Button)({
+  display: "flex",
+  flexDirection: "row",
+  alignItems: "flex-end",
+  padding: "14px 30px",
+  gap: "10px",
+
+  position: "absolute",
+  width: "165px",
+  height: "48px",
+  left: "49.5%",
+  top: "36%",
+  backgroundColor: " #024E82",
+});
+const ButtonTypo = styled(Typography)({
+  width: "93px",
+  height: "20px",
+
+  fontFamily: "Lato",
+  fontStyle: "normal",
+  fontWeight: 400,
+  fontSize: "14px",
+  lineHeight: "20px",
+
+  display: "flex",
+  alignItems: "center",
+  textAlign: "center",
+  textTransform: "uppercase",
+
+  color: "#FFFFFF",
+
+  borderRadius: "3px",
+});
+
+const DataBox = styled(Box)({
+  position: "absolute",
+  width: "550px",
+  height: "48px",
+  left: "49.5%",
+  top: "43%",
+  // border: "1px solid red",
+});
+const DataTypo = styled(Typography)({
+  width: "500px",
+  fontFamily: "Lato",
+  fontStyle: "normal",
+  fontWeight: 400,
+  fontSize: "14px",
+  lineHeight: "24px",
+  // border: "1px solid green",
+  display: "flex",
+  justifyContent: "start",
+});
+
+const StyledCircleIcon = styled(CircleIcon)({
+  width: "32px",
+  height: "32px",
+});
+const DescriptionBox = styled(Box)({
+  position: "absolute",
+  width: "1240px",
+  height: "301px",
+  // left: "63px",
+  top: "1090px",
+  border: "1px solid green",
+});
+const sizes = [
+  { label: "Small", subScript: "S" },
+  { label: "Medium", subScript: "Md" },
+  { label: "Large", subScript: "L" },
+  { label: "ExtraLarge ", subScript: "XL" },
+];
+
 const Index = () => {
   return (
     <>
@@ -119,6 +228,95 @@ const Index = () => {
           </Price>
           <Price sx={{ color: "#024E82", left: "50%" }}>$49.50</Price>
         </PriceBox>
+        <Description>
+          A classic t-shirt never goes out of style. This is our most premium
+          collection of shirt. This plain white shirt is made up of pure cotton
+          and has a premium finish.
+        </Description>
+        <Autocomplete
+          // disablePortal
+          id="combo-box-demo"
+          options={sizes}
+          sx={{
+            position: "absolute",
+            width: "210px",
+            height: "48px",
+            left: "49.5%",
+            top: "28%",
+            backgroundColor: "#FBFBFB",
+          }}
+          renderInput={(params) => (
+            <TextField {...params} label="Select Size" />
+          )}
+          renderOption={(props, option) => (
+            <Box
+              component="li"
+              sx={{
+                border: "1px solid grey",
+              }}
+              {...props}
+            >
+              <Box>
+                <SizeTypo>{option?.label}</SizeTypo>
+              </Box>
+              <Box
+                sx={{
+                  position: "absolute",
+                  left: "85%",
+                }}
+              >
+                <SizeTypo>{option?.subScript}</SizeTypo>
+              </Box>
+            </Box>
+          )}
+        />
+        <StyledButton variant="contained">
+          <ButtonTypo>Add To Cart</ButtonTypo>
+        </StyledButton>
+        <DataBox>
+          <DataTypo sx={{ color: "#1D1D1D" }}>
+            Category:
+            <DataTypo sx={{ color: "#555555" }}> Women, Polo, Casual</DataTypo>
+          </DataTypo>
+
+          <DataTypo sx={{ color: "#1D1D1D" }}>
+            Tags:
+            <DataTypo sx={{ color: "#555555" }}>
+              Modern, Design, cotton
+            </DataTypo>
+          </DataTypo>
+        </DataBox>
+        <Stack
+          direction="row"
+          spacing={2}
+          sx={{
+            position: "absolute",
+            left: "49.5%",
+            right: "38.43%",
+            top: "50%",
+            bottom: "58.71%",
+          }}
+        >
+          <CircleIcon
+            style={{ color: "#F1F1F1", width: "32px", height: "32px" }}
+          />
+          <StyledCircleIcon style={{ color: "#818181" }} />
+          <StyledCircleIcon style={{ color: "#F1F1F1" }} />
+          <StyledCircleIcon style={{ color: "#818181" }} />
+          <StyledCircleIcon style={{ color: "#F1F1F1" }} />
+          <MailIcon
+            style={{
+              position: "absolute",
+              color: "green",
+              left: "96%",
+              top: "4px",
+              display: "flex",
+              alignItems: "center",
+              textAlign: "center",
+            }}
+          />
+        </Stack>
+        <DescriptionBox>Hehehehe</DescriptionBox>
       </StyledBox>
     </>
   );

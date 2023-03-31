@@ -54,6 +54,30 @@ const RatingNumber = styled(Typography)({
   lineHeight: "16px",
   color: "#1D1D1D",
 });
+const PriceBox = styled(Box)({
+  position: "absolute",
+  width: "166px",
+  height: "30px",
+  left: "49.5%",
+  top: "13%",
+  // border: "1px solid red",
+});
+const Price = styled(Typography)({
+  position: "absolute",
+  width: "76px",
+  height: "29px",
+  top: "10%",
+
+  fontFamily: "Lato",
+  fontStyle: "normal",
+  fontWeight: 400,
+  fontSize: "24px",
+  lineHeight: "29px",
+
+  display: "flex",
+  alignItems: "center",
+  textAlign: "center",
+});
 const Index = () => {
   return (
     <>
@@ -83,6 +107,18 @@ const Index = () => {
           />
           <RatingNumber>(15)</RatingNumber>
         </RatingBox>
+        <PriceBox>
+          <Price
+            sx={{
+              left: "0%",
+              color: "#818181",
+              textDecorationLine: "line-through",
+            }}
+          >
+            $69.75
+          </Price>
+          <Price sx={{ color: "#024E82", left: "50%" }}>$49.50</Price>
+        </PriceBox>
       </StyledBox>
     </>
   );

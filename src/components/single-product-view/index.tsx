@@ -1,6 +1,8 @@
 import Container from "@mui/material/Container";
-import React from "react";
+
 import Headers from "../about-us/header/header";
+
+import FooterForSinglePage from "../footer/footerForSinglePage";
 import Content from "./content";
 
 const Index = () => {
@@ -9,6 +11,7 @@ const Index = () => {
       <Container maxWidth="lg">
         <Headers />
         <Content />
+        <FooterForSinglePage />
       </Container>
     </>
   );

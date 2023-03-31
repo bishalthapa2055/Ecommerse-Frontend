@@ -20,7 +20,7 @@ const StyledBox = styled(Box)(({ theme }) => ({
   height: "1249px",
   //   left: "83px",
   top: "142px",
-  border: "1px solid red",
+  // border: "1px solid red",
 }));
 const ImageBox = styled(Box)({
   position: "absolute",
@@ -177,8 +177,64 @@ const DescriptionBox = styled(Box)({
   width: "1240px",
   height: "301px",
   // left: "63px",
-  top: "1090px",
-  border: "1px solid green",
+  top: "950px",
+  // border: "1px solid green",
+});
+
+const ReviewsBox = styled(Box)({
+  position: "absolute",
+  width: "136px",
+
+  height: "56px",
+  // left: 66px;
+  // top: "1090px",
+  border: "2px solid #EBEBEB",
+  cursor: "pointer",
+});
+const RevTypo = styled(Typography)({
+  position: "absolute",
+  top: "30%",
+  left: "15%",
+  width: "89px",
+  height: "19px",
+  fontFamily: "Arimo",
+  fontStyle: "normal",
+  fontWeight: 700,
+  fontSize: "16px",
+  lineHeight: "18px",
+
+  display: "flex",
+  alignItems: "center",
+
+  color: "#1D1D1D",
+});
+const AllDatas = styled(Box)({
+  boxSizing: "border-box",
+  position: "absolute",
+  width: "1240px",
+  height: "246px",
+  // left: "66px",
+  top: "20%",
+  background: "#FFFFFF",
+  border: "1px solid #EBEBEB",
+  borderRadius: "0px",
+});
+
+const AllDataTypo = styled(Typography)({
+  position: "relative",
+  width: "1144px",
+  height: "150px",
+  left: "15px",
+  top: "10%",
+
+  fontFamily: "Lato",
+  fontStyle: "normal",
+  fontWeight: 400,
+  fontSize: "16px",
+  lineHeight: "19px",
+  color: "#555555",
+  // border: "1px solid red",
+  margin: "20px 20px 20px 20px",
 });
 const sizes = [
   { label: "Small", subScript: "S" },
@@ -316,7 +372,32 @@ const Index = () => {
             }}
           />
         </Stack>
-        <DescriptionBox>Hehehehe</DescriptionBox>
+        <DescriptionBox>
+          <ReviewsBox>
+            <RevTypo>Descriptions</RevTypo>
+          </ReviewsBox>
+          <ReviewsBox sx={{ left: "11%" }}>
+            <RevTypo>Reviews (0)</RevTypo>
+          </ReviewsBox>
+          <AllDatas>
+            <AllDataTypo>
+              A key objective is engaging digital marketing customers and
+              allowing them to interact with the brand through servicing and
+              delivery of digital media. Information is easy to access at a fast
+              rate through the use of digital communications. Users with access
+              to the Internet can use many digital mediums, such as Facebook,
+              YouTube, Forums, and Email etc.
+              <br />
+              <br />
+              Through Digital communications it creates a Multi-communication
+              channel where information can be quickly exchanged around the
+              world by anyone without any regard to whom they are.[28] Social
+              segregation plays no part through social mediums due to lack of
+              face to face communication and information being wide spread
+              instead to a selective audience.
+            </AllDataTypo>
+          </AllDatas>
+        </DescriptionBox>
       </StyledBox>
     </>
   );

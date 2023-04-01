@@ -9,6 +9,8 @@ import {
   TableRow,
   Paper,
   Typography,
+  Divider,
+  Button,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import React from "react";
@@ -40,14 +42,67 @@ const CartTotal = styled(Typography)({
   fontWeight: 700,
   fontSize: "36px",
   lineHeight: "48px",
-  /* identical to box height, or 133% */
 
   display: "flex",
   alignItems: "flex-end",
 
-  /* heading */
-
   color: "#1D1D1D",
+});
+
+const SubtotalBox = styled(Box)({
+  position: "relative",
+  width: "531px",
+  height: "21px",
+  // left: 63px;
+  top: "80px",
+  //   border: "1px solid red",
+  display: "flex",
+  justifyContent: "space-between",
+});
+const SubtotalsTypo = styled(Typography)({
+  fontFamily: "Lato",
+  fontStyle: "normal",
+  fontWeight: 400,
+  fontSize: "16px",
+  lineHeight: "19px",
+});
+const StyledDivider = styled(Divider)({
+  position: "relative",
+  width: "530px",
+  height: "0px",
+  // left: "64px",
+
+  border: "1px solid #E5E5E5",
+});
+
+const StyledButton = styled(Button)({
+  position: "absolute",
+  width: "262px",
+  height: "58px",
+  //   left: "63px",
+  top: "250px",
+  //   display: "flex",
+  flexDirection: "row",
+  alignItems: "flex-end",
+  padding: "18px 30px",
+  gap: "10px",
+
+  backgroundColor: "#D6763C",
+});
+const ButtonTypo = styled(Typography)({
+  fontFamily: "Lato",
+  fontStyle: "normal",
+  fontWeight: 400,
+  fontSize: "16px",
+  lineHeight: "22px",
+  /* identical to box height, or 138% */
+
+  //   display: "flex",
+  alignItems: "center",
+  textAlign: "center",
+  textTransform: "uppercase",
+
+  color: "#FFFFFF",
 });
 function createData(
   name: string,
@@ -101,7 +156,28 @@ const Index = () => {
           </Table>
         </TableContainer>
         <BoxCoupen>
-          <CartTotal>Cart Totals </CartTotal>
+          <CartTotal>Cart Totals</CartTotal>
+          <SubtotalBox>
+            <SubtotalsTypo sx={{ color: "#555555" }}>Subtotals</SubtotalsTypo>
+            <SubtotalsTypo sx={{ color: "#1D1D1D" }}>$59.00</SubtotalsTypo>
+          </SubtotalBox>
+          <StyledDivider sx={{ top: "85px" }} />
+          <SubtotalBox sx={{ position: "relative", top: "90px" }}>
+            <SubtotalsTypo sx={{ color: "#555555" }}>
+              Shipping Free
+            </SubtotalsTypo>
+            <SubtotalsTypo sx={{ color: "#1D1D1D" }}>free!!!</SubtotalsTypo>
+          </SubtotalBox>
+          <StyledDivider sx={{ top: "95px" }} />
+          <SubtotalBox sx={{ position: "relative", top: "100px" }}>
+            <SubtotalsTypo sx={{ color: "#1D1D1D", fontWeight: 700 }}>
+              Totals
+            </SubtotalsTypo>
+            <SubtotalsTypo sx={{ color: "#1D1D1D" }}>$59.00</SubtotalsTypo>
+          </SubtotalBox>
+          <StyledButton>
+            <ButtonTypo>Proceed to checkout</ButtonTypo>
+          </StyledButton>
         </BoxCoupen>
       </StyledBox>
     </>

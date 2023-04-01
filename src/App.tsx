@@ -10,6 +10,7 @@ import AboutUs from "../src/components/about-us";
 import ContactUs from "./components/contact-us";
 import SinglePageView from "./components/single-product-view";
 import ContactSucess from "./components/contact-sucess";
+import Cart from "./components/cart";
 function App() {
   return (
     <>
@@ -29,7 +30,10 @@ function App() {
       {/* <ContactSucess /> */}
       {/* fot single page view */}
 
-      <SinglePageView />
+      {/* <SinglePageView /> */}
+      {/* for cart page  */}
+
+      <Cart />
     </>
   );
 }

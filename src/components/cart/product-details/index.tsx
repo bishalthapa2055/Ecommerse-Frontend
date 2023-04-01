@@ -20,7 +20,7 @@ const StyledBox = styled(Box)({
   height: "530px",
   // left: 63px
   top: "263px",
-  border: "1px solid red",
+  //   border: "1px solid red",
 });
 const BoxCoupen = styled(Box)({
   position: "relative",
@@ -28,7 +28,7 @@ const BoxCoupen = styled(Box)({
   height: "312px",
   //   left: "63px",
   top: "40px",
-  border: "1px solid red",
+  //   border: "1px solid red",
 });
 const CartTotal = styled(Typography)({
   position: "absolute",
@@ -81,10 +81,10 @@ const StyledButton = styled(Button)({
   height: "58px",
   //   left: "63px",
   top: "250px",
-  //   display: "flex",
+  display: "flex",
   flexDirection: "row",
   alignItems: "flex-end",
-  padding: "18px 30px",
+  padding: "18px 36px",
   gap: "10px",
 
   backgroundColor: "#D6763C",
@@ -97,7 +97,7 @@ const ButtonTypo = styled(Typography)({
   lineHeight: "22px",
   /* identical to box height, or 138% */
 
-  //   display: "flex",
+  display: "flex",
   alignItems: "center",
   textAlign: "center",
   textTransform: "uppercase",
@@ -175,7 +175,7 @@ const Index = () => {
             </SubtotalsTypo>
             <SubtotalsTypo sx={{ color: "#1D1D1D" }}>$59.00</SubtotalsTypo>
           </SubtotalBox>
-          <StyledButton>
+          <StyledButton variant="contained">
             <ButtonTypo>Proceed to checkout</ButtonTypo>
           </StyledButton>
         </BoxCoupen>

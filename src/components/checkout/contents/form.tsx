@@ -1,4 +1,4 @@
-import { Box, Typography, styled, TextField } from "@mui/material";
+import { Box, Typography, styled, TextField, Button } from "@mui/material";
 import React from "react";
 const StyledBox = styled(Box)({
   position: "absolute",
@@ -87,7 +87,7 @@ const Delivery = styled(Box)({
   height: "245.38px",
   // left: 1px
   top: "1073.62px",
-  border: "1px solid red",
+  //   border: "1px solid red",
 });
 const DelContent = styled(Box)({
   boxSizing: "border-box",
@@ -99,6 +99,36 @@ const DelContent = styled(Box)({
 
   backgroundColor: "#FBFBFB",
   border: "1px solid #EBEBEB",
+});
+const DelContentTypo = styled(Typography)({
+  fontFamily: "Lato",
+  fontStyle: "normal",
+  fontWeight: 400,
+  fontSize: "16px",
+  lineHeight: "19px",
+  display: " flex",
+  alignItems: "center",
+
+  /* text */
+
+  color: "#555555",
+});
+const StyledButton = styled(Button)({
+  position: "relative",
+  width: "166px",
+  height: "48px",
+  left: "1055.12px",
+  top: "100.99px",
+
+  /* Secondary */
+
+  backgroundColor: "#D6763C",
+  //   color: "#D6763C",
+
+  "&:hover": {
+    backgroundColor: "#D6763C",
+    color: "white", // change text color on hover
+  },
 });
 const Form = () => {
   return (
@@ -153,7 +183,16 @@ const Form = () => {
         </FeedbackBox>
       </Feedback>
       <Delivery>
-        <DelContent>Haha</DelContent>
+        <DelContent>
+          <DelContentTypo>
+            Cash on delivery.
+            <br />
+            <br />
+            Please contact us if you require assistance or wish to make
+            alternate arrangements.
+          </DelContentTypo>
+        </DelContent>
+        <StyledButton variant="contained">Place Order</StyledButton>
       </Delivery>
     </>
   );

@@ -11,6 +11,7 @@ import ContactUs from "./components/contact-us";
 import SinglePageView from "./components/single-product-view";
 import ContactSucess from "./components/contact-sucess";
 import Cart from "./components/cart";
+import Checkout from "./components/checkout";
 function App() {
   return (
     <>
@@ -33,7 +34,11 @@ function App() {
       {/* <SinglePageView /> */}
       {/* for cart page  */}
 
-      <Cart />
+      {/* <Cart /> */}
+
+      {/* for checkout  */}
+
+      <Checkout />
     </>
   );
 }

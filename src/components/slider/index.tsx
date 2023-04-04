@@ -10,6 +10,7 @@ const StyledBox = styled(Box)({
   left: "1px",
   top: "94px",
   border: "1px solid red",
+  // objectFit: "cover",
 });
 
 const Index = () => {

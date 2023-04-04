@@ -12,17 +12,12 @@ import SinglePageView from "./components/single-product-view";
 import ContactSucess from "./components/contact-sucess";
 import Cart from "./components/cart";
 import Checkout from "./components/checkout";
+import Home from "./home";
 function App() {
   return (
     <>
       {/* //for home */}
-      {/* <Header /> */}
-      {/* <Slider /> */}
-      {/* <Collection /> */}
-      {/* <Services />  */}
-      {/* <Promo /> */}
-      {/* <BestSelling /> */}
-      {/* <Footer /> / */}
+      <Home />
       {/* for abour us section */}
       {/* <AboutUs /> */}
       {/* for contact use section */}
@@ -30,15 +25,11 @@ function App() {
       {/* for contact sucessfull  */}
       {/* <ContactSucess /> */}
       {/* fot single page view */}
-
       {/* <SinglePageView /> */}
       {/* for cart page  */}
-
       {/* <Cart /> */}
-
       {/* for checkout  */}
-
-      <Checkout />
+      {/* <Checkout /> */}
     </>
   );
 }

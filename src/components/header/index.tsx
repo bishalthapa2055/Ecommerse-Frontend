@@ -7,7 +7,7 @@ import Icons from "./icons";
 const StyledBox = styled(Box)(({ theme }) => ({
   display: "flex",
   justifyContent: "space-between",
-  border: "1px solid red",
+  // border: "1px solid red",
   height: "88px",
   position: "relative",
   left: "0%",

@@ -22,7 +22,7 @@ const StyledShipping = styled(Box)({
   top: "70px",
   // left: (292 + 10) * index + "px" ? (292 + 10) * index + "px" : 0,
   // bottom: "33.18%",
-  border: "1px solid red",
+  // border: "1px solid red",
   width: "233px",
   height: "71px",
   // transform: "translateX(-50%)",
@@ -32,7 +32,7 @@ const FreeShipping = styled(Typography)({
   left: "53px",
   top: "-2px",
 
-  width: "149px",
+  width: "300px",
   height: "26px",
 
   fontFamily: "Baloo",
@@ -116,19 +116,20 @@ const Index = () => {
           {serviceArray?.map((data, index) => {
             return (
               <>
-                <StyledShipping
-                  sx={{
-                    // position: "relative",
-                    left:
-                      (300 + 10) * index + "px" ? (300 + 30) * index + "px" : 0,
-                  }}
-                >
-                  <FreeShipping>{data.name}</FreeShipping>
+                <Container maxWidth="lg">
+                  <StyledShipping
+                    sx={{
+                      // position: "relative",
+                      left: index ? (300 + 40) * (index + 0) + "px" : 0,
+                    }}
+                  >
+                    <FreeShipping>{data.name}</FreeShipping>
 
-                  {data.icon}
+                    {data.icon}
 
-                  <FreeShippingDesc>{data.description}</FreeShippingDesc>
-                </StyledShipping>
+                    <FreeShippingDesc>{data.description}</FreeShippingDesc>
+                  </StyledShipping>
+                </Container>
               </>
             );
           })}

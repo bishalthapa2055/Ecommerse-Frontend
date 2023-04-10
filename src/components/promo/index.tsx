@@ -1,68 +1,119 @@
 import React from "react";
-import { Box, styled, Container } from "@mui/material";
+import { Box, styled, Container, Typography, Button } from "@mui/material";
 
 const StyledBox = styled(Box)({
   position: "absolute",
   width: "1240px",
   height: "429px",
   top: "2124px",
-  border: "5px solid red",
-  backgroundColor: "yellow",
+  // border: "1px solid red",
+
   display: "flex",
   justifyContent: "space-between",
+});
+const PeaceBox = styled(Box)({
+  width: "715px",
+  height: "429px",
+  top: "2124px",
+  backgroundColor: "#000000",
+  // border: "1 px solid green",
+});
+const BuyBox = styled(Box)({
+  position: "absolute",
+  width: "505px",
+  height: "429px",
+  left: "798px",
+  // top: "2124px",
+  backgroundColor: "#000000",
+  // border: "1 px solid yellow",
+});
+const BuyDesc = styled(Box)({
+  position: "absolute",
+  width: "406px",
+  height: "48px",
+  // left: "155px",
+  top: "181px",
+  // border: "1px solid red",
+});
+
+const TypoHeader = styled(Typography)({
+  //
+  fontFamily: "Lato",
+  fontStyle: "normal",
+  fontWeight: 400,
+  fontSize: "32px",
+  lineHeight: "48px",
+  /* or 150% */
+
+  textAlign: "center",
+  textTransform: "uppercase",
+
+  color: "#FFFFFF",
+});
+const TypoDesc = styled(Typography)({
+  fontFamily: "Lato",
+  fontStyle: "normal",
+  fontWeight: 400,
+  fontSize: "18px",
+  lineHeight: "130%",
+  textAlign: "center",
+  color: "#FFFFFF",
+});
+
+const StyledButton = styled(Button)({
+  display: "flex",
+  flexDirection: "row",
+  alignItems: "flex-end",
+  padding: "14px 36px",
+  gap: "10px",
+
+  position: "absolute",
+  width: "140px",
+  height: "48px",
+  left: "269px",
+  top: "261px",
+  color: "#024E82",
+  backgroundColor: "#FFFFFF",
+  ":hover": {
+    backgroundColor: "#ffffff",
+    color: "#024E82",
+  },
+});
+const HeaderBox = styled(Box)({
+  position: "absolute",
+  width: "368px",
+  height: "38px",
+
+  top: "119px",
+  // border: "1px solid red",
 });
 const Index = () => {
   return (
     <Container maxWidth="lg">
       <StyledBox>
-        <Box
-          sx={{
-            // position: "absolute",
-            width: "715px",
-            height: "429px",
-            top: "2124px",
-            backgroundColor: "green",
-            border: "2 px solid white",
-          }}
-        >
-          <Box
-            sx={{
-              // position: "absolute",
-              width: "368px",
-              height: "38px",
-              left: "500px",
-              top: "2243px",
-              backgroundColor: "white",
-              border: "1px solid black",
-            }}
-          >
-            Peace of ming
-          </Box>
-        </Box>
-        <Box
-          sx={{
-            position: "static",
-            width: "505px",
-            height: "429px",
-            left: "798px",
-            top: "2124px",
-            backgroundColor: "grey",
-          }}
-        >
-          <Box
-            sx={{
-              position: "static",
-              width: "368px",
-              height: "38px",
-              left: "856px",
-              top: "2243px",
-              border: "1px solid yellow",
-              alignItems: "center",
-            }}
-          >
-            Buy 2 get 1 free
-          </Box>
-        </Box>
+        <PeaceBox>
+          <HeaderBox sx={{ left: "174px" }}>
+            <TypoHeader>Peace of Mind</TypoHeader>
+          </HeaderBox>
+          <BuyDesc sx={{ left: "155px" }}>
+            <TypoDesc>
+              A one-stop platform for all your fashion needs, hassle-free. Buy
+              with a peace of mind.
+            </TypoDesc>
+          </BuyDesc>
+          <StyledButton variant="contained">BUY NOW</StyledButton>
+        </PeaceBox>
+        <BuyBox>
+          <HeaderBox sx={{ left: "69px" }}>
+            <TypoHeader>Buy 2 get 1 free</TypoHeader>
+          </HeaderBox>
+          <BuyDesc sx={{ left: "50px" }}>
+            <TypoDesc>
+              End of season sale. Buy any 2 items of your choice and get 1 free.
+            </TypoDesc>
+          </BuyDesc>
+          <StyledButton sx={{ left: "172px" }}>BUY NOW</StyledButton>
+        </BuyBox>
       </StyledBox>
     </Container>
   );

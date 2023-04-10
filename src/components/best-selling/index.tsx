@@ -9,7 +9,7 @@ const StyledBox = styled(Box)({
   height: " 920px",
   left: "0px",
   top: "2490px",
-  border: "3 px solid red",
+  // border: "3 px solid red",
   backgroundColor: "whitesmoke",
 });
 const Index = () => {
